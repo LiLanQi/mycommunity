@@ -3,7 +3,7 @@ package com.example.mycommunity.dao;
 import com.example.mycommunity.entity.LoginTicket;
 import org.apache.ibatis.annotations.*;
 
-@Mapper
+/*@Mapper
 public interface LoginTicketMapper {
 
     @Insert({
@@ -29,4 +29,4 @@ public interface LoginTicketMapper {
     })
     int updateStatus(String ticket, int status);
 
-}
+}*/

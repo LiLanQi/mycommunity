@@ -1,7 +1,8 @@
+/*
 package com.example.mycommunity;
 
 import com.example.mycommunity.dao.DiscussPostMapper;
-import com.example.mycommunity.dao.LoginTicketMapper;
+
 import com.example.mycommunity.dao.UserMapper;
 import com.example.mycommunity.entity.DiscussPost;
 import com.example.mycommunity.entity.LoginTicket;
@@ -27,8 +28,8 @@ public class MapperTests {
     @Autowired
     private DiscussPostMapper discussPostMapper;
 
-    @Autowired
-    private LoginTicketMapper loginTicketMapper;
+//    @Autowired
+//    private LoginTicketMapper loginTicketMapper;
 
     @Test
     public void testSelectUser() {
@@ -102,3 +103,4 @@ public class MapperTests {
     }
 
 }
+*/
