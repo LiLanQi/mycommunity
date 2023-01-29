@@ -10,7 +10,7 @@ public class User {
     private String salt;
     private String email;
     private int type;
-    private int status;
+    private int status; //用于md5加密 CommunityUtil.md5(user.getPassword() + user.getSalt())
     private String activationCode;
     private String headerUrl;
     private Date createTime;

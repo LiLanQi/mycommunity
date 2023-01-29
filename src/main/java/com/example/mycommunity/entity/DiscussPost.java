@@ -8,8 +8,8 @@ public class DiscussPost {
     private int userId;
     private String title;
     private String content;
-    private int type;
-    private int status;
+    private int type; // 1:顶置
+    private int status; // 1:精华
     private Date createTime;
     private int commentCount;
     private double score;

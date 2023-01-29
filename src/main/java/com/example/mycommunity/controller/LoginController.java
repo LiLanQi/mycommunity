@@ -101,6 +101,7 @@ public class LoginController implements CommunityConstant {
         String kaptchaOwner = CommunityUtil.generateUUID();
         Cookie cookie = new Cookie("kaptchaOwner", kaptchaOwner);
         cookie.setMaxAge(60);
+        // cookie的生效范围
         cookie.setPath(contextPath);
         response.addCookie(cookie);
         // 将验证码存入Redis
@@ -139,6 +140,7 @@ public class LoginController implements CommunityConstant {
         Map<String, Object> map = userService.login(username, password, expiredSeconds);
         if (map.containsKey("ticket")) {
             Cookie cookie = new Cookie("ticket", map.get("ticket").toString());
+            // cookie的生效范围
             cookie.setPath(contextPath);
             cookie.setMaxAge(expiredSeconds);
             response.addCookie(cookie);
