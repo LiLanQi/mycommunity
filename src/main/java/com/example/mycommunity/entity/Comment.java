@@ -5,10 +5,10 @@ import java.util.Date;
 public class Comment {
 
     private int id;
-    private int userId;
-    private int entityType;
-    private int entityId;
-    private int targetId;
+    private int userId; //谁发出的评论
+    private int entityType; //（1,2,3）表示实体类型是帖子、用户还是评论
+    private int entityId; //表示对应实体的id
+    private int targetId; // 对谁的评论的id？
     private String content;
     private int status;
     private Date createTime;

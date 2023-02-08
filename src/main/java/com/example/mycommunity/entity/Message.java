@@ -9,7 +9,7 @@ public class Message {
     private int toId;
     private String conversationId;
     private String content;
-    private int status;
+    private int status; // 2的时候是私信被删除，0的时候是未读
     private Date createTime;
 
     public int getId() {
