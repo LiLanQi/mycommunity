@@ -9,7 +9,7 @@ public class User {
     private String password;
     private String salt;
     private String email;
-    private int type;
+    private int type; //0:普通用户 1：管理员 2：版主
     private int status; //用于md5加密 CommunityUtil.md5(user.getPassword() + user.getSalt())
     private String activationCode;
     private String headerUrl;
